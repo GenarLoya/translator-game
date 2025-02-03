@@ -1,0 +1,21 @@
+{
+  "imports": {
+    "hono": "jsr:@hono/hono@^4.6.20"
+  },
+  "tasks": {
+    "start": "deno run --allow-net main.ts",
+    "dev": "deno run --allow-net --watch main.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  },
+  "deploy": {
+    "project": "30731016-e190-430e-b901-2fd8d0654a0d",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
