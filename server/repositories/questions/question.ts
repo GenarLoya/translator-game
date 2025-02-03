@@ -60,8 +60,6 @@ export class QuestionRepository {
   static getQuestionWithAnswerById(
     id: QuestionWithAnswer["id"]
   ): QuestionRepository {
-    console.log(questionsTestDB);
-
     const questionWithAnswer = questionsTestDB.find(
       (question) => question.id === id
     );
